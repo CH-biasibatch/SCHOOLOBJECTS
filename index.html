@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="objects.js"></script>
+    <script src="data.js"></script>
+    <script src="actions.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <meta charset="UTF-8">
+    <title>school management</title>
+
+</head>
+<body>
+
+<h1>...</h1>
+
+<h3>add new student</h3>
+<input  id="studentFirstName" placeholder="first name" >
+<input  id="studentLastName" placeholder="last name" >
+<input  id="studentGrade" placeholder="grade" >
+<button id="addStudent" onclick="addStudent()">ADD</button>
+
+<h3>add new teacher</h3>
+<input  id="teacherFirstName" placeholder="first name" >
+<input  id="teacherLastName" placeholder="last name" >
+<input  id="teacherSubject" placeholder="subject" >
+<button id="addTeacher" onclick="addTeacher()">ADD</button>
+
+<h3>add new section</h3>
+<input  id="sectionName" placeholder="section name" >
+<input  id="sectionSpaces" placeholder="spaces" >
+<button id="addSection" onclick="addSection()">ADD</button>
+
+<hr>
+
+<h3>list items</h3>
+<select id="list">
+    <option value="0">students</option>
+    <option value="1">teachers</option>
+    <option value="2">section</option>
+</select>
+<button id="listItems" onclick="list()">LIST</button>
+
+<div id="listThings"></div>
+
+<hr>
+
+<h3>create class</h3>
+
+<button id="populateLists" onclick="populateLists()">begin</button>
+
+<select id="studentList">
+    <option value="0">student</option>
+</select>
+<select id="teacherList">
+    <option value="0">teacher</option>
+</select>
+<select id="sectionList">
+    <option value="0">section</option>
+</select>
+<button id="createClassSection" onclick="createClass()">ADD</button>
+
+<hr>
+
+<h3>display class</h3>
+
+<select id="classList">
+    <option value="0">class</option>
+</select>
+<button id="showClass" onclick="">SHOW</button>
+
+
+</body>
+</html>
+
